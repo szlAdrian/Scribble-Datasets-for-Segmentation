@@ -1,5 +1,6 @@
 # Scribble-Datasets-for-Segmentation
-This repository contains the links for the scribble version of segmentation datasets
+This repository contains the links for the scribble version of segmentation datasets. 
+The converter code for the scribble version is not available yet. 
 
 The following scribble dataset obtained by the help of [DAVIS-Interactive](https://github.com/albertomontesg/davis-interactive):
 * [YoutubeVIS 2019 Scribble](https://drive.google.com/uc?id=1WFO116YoLYQ8ofkRRzASm_d49Jtq8qFp)
