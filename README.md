@@ -17,15 +17,29 @@ The converter code for the scribble version is not available yet.
 
 ## Examples 
 ### YouTubeVIS
-#### Original annotations
+#### Original annotations:
 ![Image 1](images/ytvis_img1.jpg)
-#### Scribble annotations
+#### Scribble annotations:
 ![Image 2](images/ytvis_img1_scribble.jpg)
-#### Original annotations
+#### Original annotations:
 ![Image 3](images/ytvis_img2.jpg)
-#### Scribble annotations
+#### Scribble annotations:
 ![Image 4](images/ytvis_img2_scribble.jpg)
-#### Original annotations
+#### Original annotations:
 ![Image 5](images/ytvis_img3.jpg)
-#### Scribble annotations
+#### Scribble annotations:
 ![Image 6](images/ytvis_img3_scribble.jpg)
+
+### OVIS
+#### Original annotations:
+![Image 7](images/ovis_img1.jpg)
+#### Scribble annotations:
+![Image 8](images/ovis_img1_scribble.jpg)
+#### Original annotations:
+![Image 9](images/ovis_img2.jpg)
+#### Scribble annotations:
+![Image 10](images/ovis_img2_scribble.jpg)
+#### Original annotations:
+![Image 11](images/ovis_img3.jpg)
+#### Scribble annotations:
+![Image 12](images/ovis_img3_scribble.jpg)
