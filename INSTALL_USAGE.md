@@ -1,6 +1,6 @@
 # Scribble-Datasets-for-Segmentation
 ### Installation
-This converter was initially created for the (Cluster2Former)[https://github.com/szlAdrian/Cluster2Former], check the installation of the that.
+This converter was initially created for the [Cluster2Former](https://github.com/szlAdrian/Cluster2Former), check the installation of the that.
 
 ### Usage
 In a terminal run the following command to see the usage:
