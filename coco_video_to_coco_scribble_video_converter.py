@@ -22,7 +22,7 @@ def get_parser():
     )
     parser.add_argument(
         "--output-json-file-name",
-        default="ytvis_2019_train_scribble.json", #"ytvis_2019/train_scribble.json",
+        default="ytvis_2019/train_scribble.json",
         help="The name (path) of the output (merged) JSON file for the scribble format.",
     )
     parser.add_argument(
@@ -53,18 +53,20 @@ class COCOVideoScribbleFormatConverter():
         4) save the annotation JSON files into the given folder for each video
         5) merge the saved annotation JSON files into the final JSON file
     """
-    def __init__(self,input_json_file_name = 'ytvis_2019/train.json',output_json_file_name = 'ytvis_2019/train_scribble.json', saved_jsons_folder_name = 'ytvis_2019_train_scribble_annots', output_json_file_prefix = 'ytvis_2019_train'):
+    def __init__(self,input_json_file_name = 'ytvis_2019/train.json',output_json_file_name = 'ytvis_2019/train_scribble.json', saved_jsons_folder_name = 'ytvis_2019_train_scribble_annots', output_json_file_prefix = 'ytvis_2019_train'):   
+        """Create the criterion.
+        Parameters:
+            input_json_file_name (string): Path to the input COCO video JSON file
+            output_json_file_name (string): The name (path) of the output (merged) JSON file for the scribble format.
+            saved_jsons_folder_name (string): The name (path) of the folder, where the annotation JSON files for each video will be saved. Then those will be merged.
+            output_json_file_prefix (string): The prefix of the names of the annotation JSON files which will be saved for each video.
+        """
         self.input_json_file_name = input_json_file_name
         self.output_json_file_name = output_json_file_name
         self.saved_jsons_folder_name = saved_jsons_folder_name
         self.output_json_file_prefix = output_json_file_prefix
-    """Create the criterion.
-    Parameters:
-        input_json_file_name (string): Path to the input COCO video JSON file
-        output_json_file_name (string): The name (path) of the output (merged) JSON file for the scribble format.
-        saved_jsons_folder_name (string): The name (path) of the folder, where the annotation JSON files for each video will be saved. Then those will be merged.
-        output_json_file_prefix (string): The prefix of the names of the annotation JSON files which will be saved for each video.
-    """
+        if not os.path.exists(self.saved_jsons_folder_name):
+            os.makedirs(self.saved_jsons_folder_name)
     
     def _is_continous_instance_ids_mask(self,mask):
         """
